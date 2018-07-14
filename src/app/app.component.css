@@ -1,0 +1,38 @@
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.controls:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.game_title{
+    background-color: aqua;
+}
+
+.game_score{
+    background-color: red;
+}
+
+.user_control{
+    background-color: yellow;
+}
+
+.bot_control{
+    background-color: green;
+}
+
+.result{
+    background-color: darkmagenta;
+}

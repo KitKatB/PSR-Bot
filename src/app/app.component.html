@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center" >
+  <div class="game_title">
+    <h1>
+      {{ game }}!
+    </h1>
+  </div>
+  <div class="game_score">
+    <h3>
+      <h3>Scores</h3>
+      <table class="scores" align="center" >
+        <tr>
+          <th>You</th>
+          <th>Bot</th>
+        </tr>
+        <tr>
+            <td>{{user_score}}</td>
+            <td>{{bot_score}}</td>
+          </tr>
+      </table>
+    </h3>
+  </div>
+</div>
+<div class="controls">
+    <div class="column">
+        <table class = "user_control">
+            <tr>
+                <td colspan="2"><h2>{{chosen_move}}</h2></td>
+            </tr>
+            <tr>
+                <td colspan="2">Pick a move</td>
+            </tr>
+          <tr>
+            <td><button class="user_move" (click)='move(0)'>paper</button></td>
+            <td><button class="user_move" (click)='move(1)'>scissors</button></td>
+          </tr>
+          <tr>
+              <td colspan="2" class="user_move" (click)='move(2)'><button>rock</button></td>
+          </tr>
+        </table>
+    </div>
+    <div class="column"><div class = 'result'><h2>{{winner}}</h2></div></div>
+    <div class="column"><div class = 'bot_control'><h2>{{bot_move}}</h2></div></div>
+</div>
+
